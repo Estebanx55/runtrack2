@@ -1,5 +1,5 @@
 <?php
-$hauteur = 10 ;
+$hauteur = 100 ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
