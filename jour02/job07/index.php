@@ -1,5 +1,5 @@
 <?php
-$hauteur = 100 ;
+$hauteur = 15 ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,6 @@ $hauteur = 100 ;
     echo '/' . str_repeat("&nbsp;&nbsp;", $num) . '\\' . "</br>";
     if ($num == $hauteur) {
         echo '/_' . str_repeat('_', $num) . '\\';
-
     }
 }
 ?>

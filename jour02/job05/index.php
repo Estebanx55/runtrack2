@@ -11,7 +11,7 @@ for ($num = 2; $num <= 1000; $num++)
     }
 
     if ($isPrime) {
-        echo $num . "<br/> ";
+        echo "<pre>" . $num . "</pre>";
     }
 }
 ?>

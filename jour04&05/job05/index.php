@@ -28,6 +28,7 @@
     <?php
     $John = $_POST["username"];
     $Rambo = $_POST["password"];
+    
     if ($John == "John" and $Rambo == "Rambo") {
         echo "C'est pas ma guerre";
     }   

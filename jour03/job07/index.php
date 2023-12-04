@@ -1,5 +1,5 @@
 <?php
-$str = "Certeines choses changent, et d'autres ne changeront jamais.";
+$str = "Certaines choses changent, et d'autres ne changeront jamais.";
 $largeurtext = strlen($str);
 $str1 = "";
 $str2 = "";
