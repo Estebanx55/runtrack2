@@ -27,19 +27,18 @@
         <?php
         $largeur = $_GET["Largeur"];
         $hauteur = $_GET["Hauteur"];
-
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
             for ($num = 0; $num <= $hauteur; $num++) {
-                echo '/' . str_repeat("__", $num) . '\\' . "</br>";
+                echo '/' . str_repeat("_", $num) . '\\' . "</br>";
                 if ($num == $hauteur) {
-                    echo '/_' . str_repeat('__', $num) . '\\' . "</br>";
+                    echo '/_' . str_repeat('_', $num) . '\\' . "</br>";
                 }
             }
-            for ($num = 0; $num <= $largeur; $num++) {
-                echo '|' . str_repeat("&nbsp;&nbsp;&nbsp;&nbsp;", $largeur) . '|' . "</br>";
-                if ($num == $largeur) {
-                    echo '|' . str_repeat('__', $num) . '|';
+            for ($num = 0; $num <= $hauteur; $num++) {
+                echo '|' . str_repeat("&nbsp;&nbsp;", $hauteur) . '|' . "</br>";
+                if ($num == $hauteur) {
+                    echo '|' . str_repeat('_', $hauteur) . '|';
                 }
             }
         }
