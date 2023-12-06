@@ -10,13 +10,13 @@
 <body>
     <form method="get" action="">
         <label for="Nombre">nombre:</label>
-        <input type="text" name="nombre"><br>
+        <input type="text" name="nombre" ><br>
 
-        <input type="submit" value="Envoyer">
+        <input type="submit" value="Envoyer" name="Envoyer">
     </form>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    if (isset($_GET["Envoyer"])) {
         if ($_GET["nombre"] % 2 == 0) {
             echo "Nombre pair";
         } else {

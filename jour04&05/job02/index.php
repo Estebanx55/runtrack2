@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            border: solid 1px red;
+            margin: 1%;
+        }
+
+        td {
+            border: solid 1px black;
+        }
+    </style>
 </head>
 
 
 
 <body>
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "GET") {
-        $nombre_arguments = count($_GET);
-        echo "Le nombre d'arguments GET envoyés est : " . $nombre_arguments;
-    }
-    ?>
+
     <form method="get" action="">
         <label for="Prenom">Prenom:</label>
         <input type="text" name="Prenom"><br>
@@ -25,7 +30,11 @@
 
         <input type="submit" value="Envoyer">
     </form>
-
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        $nombre_arguments = count($_GET);
+    }
+    ?>
     <table>
         <tr>
             <th>Argument</th>

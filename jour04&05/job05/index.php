@@ -21,19 +21,21 @@
         <input type="text" name="username"><br>
 
         <label for="password">password:</label>
-        <input type="text" name="password"><br>
+        <input type="password" name="password"><br>
 
-        <input type="submit" value="Envoyer">
+        <input type="submit" name="Envoyer" value="Envoyer">
     </form>
     <?php
-    $John = $_POST["username"];
-    $Rambo = $_POST["password"];
-    
-    if ($John == "John" and $Rambo == "Rambo") {
-        echo "C'est pas ma guerre";
-    }   
-    else {
-        echo "Votre pire cauchemar";
+
+
+    if (isset($_POST["Envoyer"])) {
+        $John = $_POST["username"];
+        $Rambo = $_POST["password"];
+        if ($John == "John" and $Rambo == "Rambo") {
+            echo "C'est pas ma guerre";
+        } else {
+            echo "Votre pire cauchemar";
+        }
     }
     ?>
 </body>

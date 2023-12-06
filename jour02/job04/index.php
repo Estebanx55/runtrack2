@@ -2,7 +2,7 @@
 $num = 0;
 
 while ($num <= 100){
-  $num++;
+  
 if (!($num%5)and !($num%3)){
  echo "<br/>FizzBuzz";
 }
@@ -14,5 +14,5 @@ elseif(!($num%3)){
 }
 else  {
     echo "<br/>" .$num;
-}
+}$num++;
 }

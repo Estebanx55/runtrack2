@@ -21,13 +21,14 @@
         <label for="Hauteur">Hauteur:</label>
         <input type="text" name="Hauteur"><br>
 
-        <input type="submit" value="Envoyer">
+        <input type="submit" name="Envoyer" value="Envoyer">
     </form>
     <div class=triangle>
         <?php
+        if (isset($_GET["Envoyer"])) {
         $largeur = $_GET["Largeur"];
         $hauteur = $_GET["Hauteur"];
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        
 
             for ($num = 0; $num <= $hauteur; $num++) {
                 echo '/' . str_repeat("_", $num) . '\\' . "</br>";

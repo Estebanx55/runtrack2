@@ -1,5 +1,5 @@
 <?php
-$hauteur = 15 ;
+$hauteur = 5 ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,9 +18,9 @@ $hauteur = 15 ;
     <div class=triangle>
     <?php 
     for ($num = 0; $num <= $hauteur; $num++) {
-    echo '/' . str_repeat("&nbsp;&nbsp;", $num) . '\\' . "</br>";
+    echo '/' . str_repeat("&nbsp;&nbsp;&nbsp;&nbsp;", $num) . '\\' . "</br>";
     if ($num == $hauteur) {
-        echo '/_' . str_repeat('_', $num) . '\\';
+        echo '/&nbsp;_' . str_repeat('__', $num) . '&nbsp;\\';
     }
 }
 ?>
