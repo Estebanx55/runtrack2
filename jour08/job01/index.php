@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-
+$nbvisites = isset($_COOKIE['nbvisites']) ? (int)$_COOKIE['nbvisites'] : 0;
 
 if(isset($_POST["reset"])) {
     $_SESSION['nbvisites'] = 0;
