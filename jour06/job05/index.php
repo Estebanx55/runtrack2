@@ -21,16 +21,16 @@
     <?php
     if (isset($_POST["style"])) {
         if ($_POST["style"] == "style1") {
-            echo '<head><link rel="stylesheet" href="green.css"></head>';
-            echo 'STYLE 1';
-        }
-        if ($_POST["style"] == "style2") {
-            echo '<head><link rel="stylesheet" href="blue.css"></head>';
-            echo 'STYLE 2';
-        }
-        if ($_POST["style"] == "style3") {
-            echo '<head><link rel="stylesheet" href="red.css"></head>';
-            echo 'STYLE 3';
+        //     echo '<head><link rel="stylesheet" href="green.css"></head>';
+        //     echo 'STYLE 1';
+        // }
+        // if ($_POST["style"] == "style2") {
+        //     echo '<head><link rel="stylesheet" href="blue.css"></head>';
+        //     echo 'STYLE 2';
+        // }
+        // if ($_POST["style"] == "style3") {
+        //     echo '<head><link rel="stylesheet" href="red.css"></head>';
+        //     echo 'STYLE 3';
         }
     }
     ?>
